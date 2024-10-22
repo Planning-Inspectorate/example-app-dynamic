@@ -1,0 +1,29 @@
+{
+  "name": "web",
+  "version": "0.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "build": "node src/util/build.js",
+    "start": "npm run build && node src/server.js",
+    "dev": "nodemon --watch src --ext js,scss,html,njk --exec \"npm run start\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "express-session": "^1.17.3",
+    "express-validator": "^6.12.1",
+    "govuk-frontend": "^5.7.1",
+    "nunjucks": "^3.2.4",
+    "pino": "^9.5.0",
+    "pino-pretty": "^11.3.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1",
+    "sass": "^1.64.1"
+  }
+}
