@@ -33,6 +33,8 @@
 		{% endblock %}
 	{% endblock %}
 
+	{% block before_content %}{% endblock %}
+
 	{% block content %}
 		{% block errorSummary %}
 			{% if errors %}
@@ -61,4 +63,6 @@
 			</div>
 		{% endblock %}
 		{% block pageContent %}{% endblock %}
+
+		{% block after_content %}{% endblock %}
 	{% endblock %}

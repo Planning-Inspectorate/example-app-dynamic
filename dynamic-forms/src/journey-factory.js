@@ -1,0 +1,25 @@
+import {JOURNEY_TYPES} from "@pins/common/src/dynamic-forms/journey-types";
+
+
+/**
+ * @typedef {import('./journey-response').JourneyResponse} JourneyResponse
+ */
+
+export const LPA_JOURNEY_TYPES_FORMATTED = {
+    HAS: JOURNEY_TYPES.HAS_QUESTIONNAIRE,
+    S78: JOURNEY_TYPES.S78_QUESTIONNAIRE,
+    STATEMENT: JOURNEY_TYPES.S78_LPA_STATEMENT,
+    FINAL_COMMENTS: JOURNEY_TYPES.S78_LPA_FINAL_COMMENTS
+};
+
+export const APPELLANT_JOURNEY_TYPES_FORMATTED = {
+    HAS: JOURNEY_TYPES.HAS_APPEAL_FORM,
+    S78: JOURNEY_TYPES.S78_APPEAL_FORM,
+    FINAL_COMMENTS: JOURNEY_TYPES.S78_APPELLANT_FINAL_COMMENTS
+};
+
+// TODO: move these out to common
+export default {
+    LPA_JOURNEY_TYPES_FORMATTED,
+    APPELLANT_JOURNEY_TYPES_FORMATTED
+};

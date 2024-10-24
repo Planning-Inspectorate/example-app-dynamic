@@ -1,0 +1,14 @@
+{
+  "name": "high-hedges-poc",
+  "workspaces": [
+    "dynamic-forms",
+    "web"
+  ],
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "license": "MIT"
+}
